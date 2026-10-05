@@ -7,7 +7,7 @@ namespace CombatSystemSystem
     [CreateAssetMenu(fileName = "NewAnimationDictionary", menuName = "Combat System System/Animation Dictionary")]
     public class AnimationDictionary : ScriptableObject, ISerializationCallbackReceiver
     {
-        [SerializeField] public Dictionary<string, AnimationClip> animations { get; private set; }
+        public Dictionary<string, AnimationClip> animations { get; private set; }
         [SerializeField] DataSet[] _animationDatas;
 
         // Do not call these remotely. They are for serialization only
